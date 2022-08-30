@@ -42,5 +42,16 @@ update Emp_Payroll set Gender = 'M' where name = 'Bill' or name = 'Charlie';
 update Emp_Payroll set Gender = 'F' where name = 'Terisa';
 select * from Emp_Payroll
 
+----UC7 find sum, average, min, max and number of male and female employees
+select gender,sum(salary) as Totalsalary from Emp_Payroll group by gender;
+select gender,avg(salary) as averagesalary from Emp_Payroll group by gender;
+select gender,min(salary) as minimumsalary from Emp_Payroll group by gender;
+select gender,min(salary) as maximumsalary from Emp_Payroll group by gender;
+select gender,count(salary) as gandercount from Emp_Payroll group by gender;
+
+
+
+
+
 
 
