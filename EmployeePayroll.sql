@@ -27,3 +27,10 @@ insert into Emp_Payroll values
 
 select * from Emp_Payroll
 
+----UC5 Retrieve some paticular data from the table
+
+select salary from Emp_Payroll where name = 'Bil'
+--Retrieve the bil salary
+
+select name from Emp_Payroll where start_date between '2019-01-01' and GETDATE();
+--Retrieve employee name using start date
