@@ -56,6 +56,13 @@ Address varchar (100) default 'India' not null,
 Department varchar (20) default 'CS' not null
 select * from Emp_Payroll
 
-
+----UC9 Extend table and add more columns
+alter table Emp_Payroll add
+Basic_Pay money,
+Deductions money,
+Taxable_Pay money,
+Income_Tax money,
+Net_Pay money;
+select * from Emp_Payroll
 
 
