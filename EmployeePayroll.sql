@@ -23,4 +23,7 @@ insert into Emp_Payroll values
 ('Terisa', 400000.0,'2019-05-30'),
 ('Charlie', 600000.0,'2020-07-09')
 
+----UC4 Retrieve all the employee payroll data in table
+
+select * from Emp_Payroll
 
