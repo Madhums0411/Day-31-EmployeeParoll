@@ -49,8 +49,12 @@ select gender,min(salary) as minimumsalary from Emp_Payroll group by gender;
 select gender,min(salary) as maximumsalary from Emp_Payroll group by gender;
 select gender,count(salary) as gandercount from Emp_Payroll group by gender;
 
-
-
+----UC8 Extend table and store some extra data of the employee
+alter table Emp_Payroll add
+Phonenumber varchar(15),
+Address varchar (100) default 'India' not null,
+Department varchar (20) default 'CS' not null
+select * from Emp_Payroll
 
 
 
