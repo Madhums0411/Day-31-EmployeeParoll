@@ -65,4 +65,10 @@ Income_Tax money,
 Net_Pay money;
 select * from Emp_Payroll
 
+----UC10 Update department and add row 
+update Emp_Payroll set Department = 'Sales' where name = 'Terisa';
+
+insert into Emp_Payroll values
+('Terisa',400000.00,'2019-05-30','F',NULL,'India','Marketing',NULL,NULL,NULL,NULL,NUll)
+select * from Emp_Payroll
 
