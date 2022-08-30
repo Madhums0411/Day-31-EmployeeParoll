@@ -16,4 +16,11 @@ start_date date not null
 
 select * from Emp_Payroll
 
+----UC3 Insert employee payroll data
+
+insert into Emp_Payroll values
+('Bil', 200000.0,'2018-03-28'),
+('Terisa', 400000.0,'2019-05-30'),
+('Charlie', 600000.0,'2020-07-09')
+
 
