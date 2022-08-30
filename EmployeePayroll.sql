@@ -34,3 +34,13 @@ select salary from Emp_Payroll where name = 'Bil'
 
 select name from Emp_Payroll where start_date between '2019-01-01' and GETDATE();
 --Retrieve employee name using start date
+
+----UC6 Alter, Update and insert the column to employee payroll table
+alter table Emp_Payroll add Gender char(1)
+update Emp_Payroll set name ='Bill' where id= 1
+update Emp_Payroll set Gender = 'M' where name = 'Bill' or name = 'Charlie';
+update Emp_Payroll set Gender = 'F' where name = 'Terisa';
+select * from Emp_Payroll
+
+
+
